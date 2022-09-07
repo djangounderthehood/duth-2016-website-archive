@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django: Under the Hood</title>
+
+        <meta name="description" content="Django: Under the Hood is an exciting conference full of deep, detailed talks about Django taking place in November, 2016, Amsterdam. Come and learn about the internals of Django, and help to shape its future.">
+        <meta name="keywords" content="programming, python, django, conference, under the hood">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Django: Under the Hood 2016" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Django: Under the Hood is an exciting conference full of deep, detailed talks about Django taking place in November, 2016, Amsterdam. Come and learn about the internals of Django, and help to shape its future." />
+        <meta property="og:url" content="https://www.djangounderthehood.com/" />
+        <meta property="og:image" content="https://www.djangounderthehood.com/static/img/avatar.png" />
+
+        <link rel="icon" type="image/x-icon" href="../static/img/favicon.3b09facbaa72.png" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Lora:400,700,400i,700i">
+        <link href="../static/css/app.614e11fe8f02.css" rel="stylesheet" type="text/css" media="screen,projection" />
+    </head>
+    <body>
+        <div id="left-fixed-cloud"></div>
+        <div id="right-absolute-cloud"></div>
+        <div class="container">
+            <aside>
+              <a href="../index.html">
+                  <img src="../static/img/logo-watercolor.0d6bdc62a6d5.png" alt="Django: Under the Hood" class="logo" />
+              </a>
+              <p>
+                3 - 6th Nov 2016<br />
+                <span data-emoji-alt="🌷">Amsterdam</span>
+              </p>
+              <nav>
+                  
+
+<ul>
+	<li><a href="../talks/index.html" data-emoji-alt="🕒">Talk videos</a></li>
+	
+	<li><a href="../schedule/index.html" data-emoji-alt="🕒">Schedule</a></li>
+	<li><a href="../sprints/index.html" data-emoji-alt="🏃">Sprints</a></li>
+	<li><a href="../index.html#speakers" data-emoji-alt="📢">Speakers</a></li>
+	<li><a href="../index.html#sponsors" data-emoji-alt="💞">Sponsors</a></li>
+	<li><a href="../travel/index.html" data-emoji-alt="🚀">Travel</a></li>
+	<li><a href="../accessibility/index.html" data-emoji-alt="♿">Accessibility</a></li>
+	
+	<li><a href="../coc/index.html">Code of Conduct</a></li>
+	<li><a href="../blog/index.html" data-emoji-alt="📖">Blog</a></li>
+	<li><a class="stroopwafelify" title="Stroop">🍯🍪🌧</a></li>
+</ul>
+
+              </nav>
+            </aside>
+            <main>
+                <header class="hidden-xs hidden-print"></header>
+
+                
+                
+<section id="organizers" class="row">
+    <h1>Team</h1>
+
+    
+        <div class="row">
+            
+                <div class="organizer col-md-4  clearfix" id="marc-tamlyn">
+
+                        <a href="https://twitter.com/mjtamlyn">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/marc.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="📯">Marc Tamlyn</h3>
+                    <p class="title">Chief Talker</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="agata-grdal">
+
+                        <a href="https://twitter.com/AgataGrdal">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/agata.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="😺 🚜">Agata Grdal</h3>
+                    <p class="title">Email Empress</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="ola-sendecka">
+
+                        <a href="https://twitter.com/asendecka">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/ola_sendecka.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="🐝">Ola Sendecka</h3>
+                    <p class="title">Radiant Beekeeper</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="organizer col-md-4  clearfix" id="kasia-kaminska">
+
+                        <a href="https://twitter.com/khkaminska">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/kasia.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="☕">Kasia Kamińska</h3>
+                    <p class="title">Goodies Maven</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="baptiste-mispelon">
+
+                        <a href="https://twitter.com/bmispelon">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/baptistek.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="👨🎸🐍🌐💻">Baptiste Mispelon</h3>
+                    <p class="title">Emoji Whisperer</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="tomek-paczkowski">
+
+                        <a href="https://twitter.com/oinopion">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/tomek.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="🚲🚀">Tomek Paczkowski</h3>
+                    <p class="title">Chief Robotic Sprinter</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="organizer col-md-4  clearfix" id="sasha-romijn">
+
+                        <a href="https://twitter.com/mxsash">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/201708_dcus-b_800px.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="🐿">Sasha Romijn</h3>
+                    <p class="title">Senior Stroopwafel Consultant</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="rob-kirberich">
+
+                        <a href="https://twitter.com/kirberich">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/rob.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="✨ 🔌">Rob Kirberich</h3>
+                    <p class="title">Sparkles Tamer</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="ola-sitarska">
+
+                        <a href="https://twitter.com/olasitarska">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/ola_sitarska.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="📈👸">Ola Sitarska</h3>
+                    <p class="title">Spreadsheet Overlord</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+        </div>
+    
+        <div class="row">
+            
+                <div class="organizer col-md-4  clearfix" id="ania-warzecha">
+
+                        <a href="https://twitter.com/aniav">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/ania2.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="⚡️⚡️⚡️">Ania Warzecha</h3>
+                    <p class="title">Lady Stroopwafel-Moustache</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+                <div class="organizer col-md-4  clearfix" id="paul-hallett">
+
+                        <a href="https://twitter.com/phalt_">
+                            <div class="organizer__photo" style="background-image: url(../static/duth-uploads.s3.amazonaws.com/paul.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+                        </a>
+
+                    <h3 class="name" data-emoji-alt="🚀">Paul Hallett</h3>
+                    <p class="title">Space Fanatic</p>
+                    <ul class="toolbox"></ul>
+                </div>
+            
+        </div>
+    
+</section>
+
+                <div class="cls"></div>
+                <footer>
+                    
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="../static/img/contact-header.24c9cb960865.png" class="header-image" alt="CONTACT" height="120" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9">
+        Got a question?<br /> Drop us a line: <a href="mailto:hello">hello@djangounderthehood.com</a>
+    </div>
+    <div class="col-md-3">
+      <a href="http://twitter.com/DjangoUnderHood">
+    </div>
+</div>
+
+<p class="credits row"><span data-emoji-alt="🎸🚗">Django: Under The Hood</span> conference is organized by <a href="index.html" data-emoji-alt="👫👭👬👫👬👫">bunch of stroopwafel enthusiasts</a> with help from the <span data-emoji-alt="🌷🎸👬👭">Dutch Django Association</span>.</p>
+
+<p class="easteregg row text-center">
+    <a title="Turn on emoji mode" class="emojimode-toggler emojimode-off">😺</a>
+</p>
+
+                </footer>
+            </main>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/vendor.c3755ac51851.js" charset="utf-8"></script>
+        <script type="text/javascript" src="../static/js/app.d0d8b77f1414.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            window.stroopwafel = "/static/img/stroopwafel.e16ffa43d092.png";
+            window.glutenfree = "/static/img/logo-watercolor.0d6bdc62a6d5.png";
+        </script>
+    </body>
+</html>

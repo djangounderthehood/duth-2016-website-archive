@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django: Under the Hood</title>
+
+        <meta name="description" content="Django: Under the Hood is an exciting conference full of deep, detailed talks about Django taking place in November, 2016, Amsterdam. Come and learn about the internals of Django, and help to shape its future.">
+        <meta name="keywords" content="programming, python, django, conference, under the hood">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="Django: Under the Hood 2016" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Django: Under the Hood is an exciting conference full of deep, detailed talks about Django taking place in November, 2016, Amsterdam. Come and learn about the internals of Django, and help to shape its future." />
+        <meta property="og:url" content="https://www.djangounderthehood.com/" />
+        <meta property="og:image" content="https://www.djangounderthehood.com/static/img/avatar.png" />
+
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.3b09facbaa72.png" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Lora:400,700,400i,700i">
+        <link href="static/css/app.614e11fe8f02.css" rel="stylesheet" type="text/css" media="screen,projection" />
+    </head>
+    <body>
+        <div id="left-fixed-cloud"></div>
+        <div id="right-absolute-cloud"></div>
+        <div class="container">
+            <aside>
+              <a href="index.html">
+                  <img src="static/img/logo-watercolor.0d6bdc62a6d5.png" alt="Django: Under the Hood" class="logo" />
+              </a>
+              <p>
+                3 - 6th Nov 2016<br />
+                <span data-emoji-alt="🌷">Amsterdam</span>
+              </p>
+              <nav>
+                  
+
+<ul>
+	<li><a href="talks/index.html" data-emoji-alt="🕒">Talk videos</a></li>
+	
+	<li><a href="schedule/index.html" data-emoji-alt="🕒">Schedule</a></li>
+	<li><a href="sprints/index.html" data-emoji-alt="🏃">Sprints</a></li>
+	<li><a href="index.html#speakers" data-emoji-alt="📢">Speakers</a></li>
+	<li><a href="index.html#sponsors" data-emoji-alt="💞">Sponsors</a></li>
+	<li><a href="travel/index.html" data-emoji-alt="🚀">Travel</a></li>
+	<li><a href="accessibility/index.html" data-emoji-alt="♿">Accessibility</a></li>
+	
+	<li><a href="coc/index.html">Code of Conduct</a></li>
+	<li><a href="blog/index.html" data-emoji-alt="📖">Blog</a></li>
+	<li><a class="stroopwafelify" title="Stroop">🍯🍪🌧</a></li>
+</ul>
+
+              </nav>
+            </aside>
+            <main>
+                <header class="hidden-xs hidden-print"></header>
+
+                
+                
+
+<section id="about">
+    
+
+
+<div class="row" id="about">
+    <div class="col-md-7">
+        
+        <h1 data-emoji-alt="🎸🚗">Django: Under The Hood</h1>
+        <p>
+            <span data-emoji-alt="🎸🚗">Django: Under the Hood</span> is back for its third edition!
+            Join us for this exciting <span data-emoji-alt="🎸">Django</span> conference full of deep, detailed talks and amazing opportunities to shape the future of <span data-emoji-alt="🎸">Django</span>.
+        </p>
+        <p>
+            The conference is being organised by members of the Django community, including several members of the Django core team, and in association with the <a href="http://djangovereniging.nl" data-emoji-alt="🌷🎸👬👭">Dutch Django Association</a>.
+            All attendees must follow the <a href="coc/index.html">Code of Conduct</a>.
+        </p>
+        
+    </div>
+
+    <div class="col-md-5 dates">
+        <h2>When &amp; where?</h2>
+        <p>
+            <h6>Talks</h6>
+            1pm - 6pm on Thu, 3rd of Nov<br />
+            10am - 6pm on Fri, 4th of Nov<br />
+            <a href="https://www.google.co.uk/maps/place/Pakhuis+De+Zwijger/" target="_blank">Pakhuis de Zwijger</a>
+        </p>
+        <p>
+            <h6>Sprints</h6>
+            10am - 6pm on Sat, 5th of Nov<br />
+            10am - 2pm on Sun, 6th of Nov<br />
+            <a href="http://amsterdam.impacthub.net/contact/" target="_blank">Impact Hub</a>
+        </p>
+    </div>
+</div>
+
+</section>
+<div class="cls"></div>
+
+<section id="speakers">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><img src="static/img/speakers-header.9c2a6cfe1970.png" class="header-image" alt="SPEAKERS" /></h2>
+        <p>
+            The schedule is as follows:
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/nadia.1bbfb4d76960.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Nadia Eghbal
+        </h3>
+        <p>
+            Nadia will be speaking about <span data-emoji-alt="💰💰💰">OSS Funding</span>
+        </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/andrew.e155e2edd7e7.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Andrew Godwin
+        </h3>
+        <p>
+            Andrew will be speaking about <span data-emoji-alt="🎸🔌">Django Channels</span>
+        </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/ana.a3b6fd240b3f.jpeg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Ana Balica
+        </h3>
+        <p>
+            Ana will be speaking about Testing
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-4 clearfix">
+      <div class="speaker__photo" style="background-image: url(static/img/speakers/carl.5a472b66004b.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+      <h3>
+          Carl Meyer
+      </h3>
+      <p>
+          Carl will be speaking about Django at Instagram
+      </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/jen.e79a36fed36c.png), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Jennifer Akullian
+        </h3>
+        <p>
+            Jen will be giving a keynote about mental health in tech
+        </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/loic.7d65b5f514d1.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Loïc Bistuer
+        </h3>
+        <p>
+            Loïc will be speaking about Validation
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/idan.ca1d526f8629.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Idan Gazit
+        </h3>
+        <p>
+            <span>Idan</span> will be speaking about modern <span data-emoji-alt="🔥">JavaScript</span>
+        </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+      <div class="speaker__photo" style="background-image: url(static/img/speakers/michael.783c65a62d69.jpg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+      <h3>
+          Michael Manfre
+      </h3>
+      <p>
+          Michael will be speaking about custom Django database backends
+      </p>
+    </div>
+    <div class="speaker col-md-4 clearfix">
+        <div class="speaker__photo" style="background-image: url(static/img/speakers/aymeric.9975d4eb4e41.jpeg), radial-gradient(farthest-corner at 1em 1em, rgba(249, 191, 59, .7), rgba(52, 152, 219, .8))"></div>
+        <h3>
+            Aymeric Augustin
+        </h3>
+        <p>
+            Aymeric will be speaking about Debugging
+        </p>
+    </div>
+</div>
+
+</section>
+
+
+
+<section id="tickets">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="static/img/tickets-header.f63fdff847b1.png" class="header-image" alt="TICKETS" />
+        <p>
+            The conference tickets are now sold out. <a href="https://ti.to/duth/2016">Join the Waiting List</a> for last minute cancellations.
+        </p>
+        
+    </div>
+</div>
+
+</section>
+
+<section id="sponsors">
+    
+
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="static/img/sponsors-header.13a8dd9bbf4e.png" class="header-image" alt="SPONSORS" />
+    </div>
+</div>
+
+
+<h3>Gold sponsors</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor gold col-md-6  vertical-center">
+            
+            <a href="https://www.sanoma.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/sanoma_logo_basic_gray_rgb.png" alt="Sanoma" title="Sanoma"/>
+            </a>
+        </div>
+    
+    </div>
+
+
+<h3>Silver sponsors</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.zupr.nl" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/zupr-rgb-final.png" alt="Zupr" title="Zupr"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://lincolnloop.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/ll_logo_color.png" alt="Lincoln Loop" title="Lincoln Loop"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://developers.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/logodev_Blok2png.png" alt="Developers.nl" title="Developers.nl"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.revsys.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/revsys-logo.png.300x300_q85_background-ffffff_upscale-True.png" alt="RevSys" title="RevSys"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.nelen-schuurmans.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/LogoNS_2012_300dpi_digitaal.jpg" alt="nelen-schuurmans.nl" title="nelen-schuurmans.nl"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="index.html" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/unnamed.jpg" alt="JetBrains" title="JetBrains"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.jambonsw.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/JamBonSWLogoLong.png" alt="JamBon Software" title="JamBon Software"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.leukeleu.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/leukeleu-logo-dark.png" alt="Leukeleu" title="Leukeleu"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.byte.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/byte.png" alt="Byte" title="Byte"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://jobsatkiwi.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/Kiwicom.png" alt="Kiwi" title="Kiwi"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://zapier.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/zapier-logo.png" alt="Zapier" title="Zapier"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://mirumee.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/mme_H_blue-01.png" alt="Mirumee" title="Mirumee"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.goldmund-wyldebeast-wunderliebe.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/GW20e_logo.jpg" alt="Goldmund, Wyldebeast &amp; Wunderliebe" title="Goldmund, Wyldebeast &amp; Wunderliebe"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.nephila.it/en/about/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/nephila_logo.png" alt="Nephila" title="Nephila"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://signrequest.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/logo-big.png" alt="SignRequest" title="SignRequest"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://dashcare.nl/nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/dashcare_PNG_transparant.png" alt="DashCare" title="DashCare"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.movefresh.com" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/movefresh_logo_text.png" alt="movefresh" title="movefresh"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.fabrique.nl/en/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/FAB_line_01_RGB_grey300dpi.png" alt="Fabrique" title="Fabrique"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.maykinmedia.nl/en/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/maykin_transparent_block_1.png__306x229_q95_crop.png" alt="Maykin Media" title="Maykin Media"/>
+            </a>
+        </div>
+    
+    </div>
+
+
+<h3>Bronze sponsors</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-3 ">
+            
+            <a href="http://djangostars.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/ds_new_logo_1.png" alt="Django Stars" title="Django Stars"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-3 ">
+            
+            <a href="https://www.89grad.ch/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/logo_89grad_unterstrichen_nopadding.png" alt="89grad" title="89grad"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-3 ">
+            
+            <a href="https://www.caktusgroup.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/Caktus_Logo_Tagline_Color-Lockup.png" alt="Caktus" title="Caktus"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-3 ">
+            
+            <a href="http://eldarion.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/Eldarion_Logo.png" alt="Eldarion" title="Eldarion"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-3 ">
+            
+            <a href="https://www.caktusgroup.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/caktus_logo_tagline.png" alt="Caktus" title="Caktus"/>
+            </a>
+        </div>
+    
+    </div>
+
+
+<h3>Partners</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="https://p.ota.to/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/logo.png" alt="Potato" title="Potato"/>
+            </a>
+            <p>Exciting Stage Installation ✨</p>
+        </div>
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="https://www.sherpany.com/en/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/Sherpany_Version_Blue.png" alt="Sherpany" title="Sherpany"/>
+            </a>
+            <p>Lanyards</p>
+        </div>
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="https://getsentry.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2016/sentry.png" alt="Sentry" title="Sentry"/>
+            </a>
+            <p>Conference Party!</p>
+        </div>
+    
+    </div>
+
+
+
+
+</section>
+
+
+                <div class="cls"></div>
+                <footer>
+                    
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="static/img/contact-header.24c9cb960865.png" class="header-image" alt="CONTACT" height="120" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-9">
+        Got a question?<br /> Drop us a line: <a href="mailto:hello">hello@djangounderthehood.com</a>
+    </div>
+    <div class="col-md-3">
+      <a href="http://twitter.com/DjangoUnderHood">
+    </div>
+</div>
+
+<p class="credits row"><span data-emoji-alt="🎸🚗">Django: Under The Hood</span> conference is organized by <a href="team/index.html" data-emoji-alt="👫👭👬👫👬👫">bunch of stroopwafel enthusiasts</a> with help from the <span data-emoji-alt="🌷🎸👬👭">Dutch Django Association</span>.</p>
+
+<p class="easteregg row text-center">
+    <a title="Turn on emoji mode" class="emojimode-toggler emojimode-off">😺</a>
+</p>
+
+                </footer>
+            </main>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="static/js/vendor.c3755ac51851.js" charset="utf-8"></script>
+        <script type="text/javascript" src="static/js/app.d0d8b77f1414.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            window.stroopwafel = "/static/img/stroopwafel.e16ffa43d092.png";
+            window.glutenfree = "/static/img/logo-watercolor.0d6bdc62a6d5.png";
+        </script>
+    </body>
+</html>
